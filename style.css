@@ -248,3 +248,67 @@ img { display: block; max-width: 100%; }
   transform: scale(1.04);
   opacity: 0.92;
 }
+
+/* ============================================================
+   MOBILE — max-width: 768px
+   ============================================================ */
+@media (max-width: 768px) {
+  :root {
+    --pad-x: 20px;
+  }
+
+  /* ── Nav ── */
+  .nav {
+    padding: 20px var(--pad-x);
+    gap: 16px;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+
+  /* ── Hero: single column, collage stacks below text ── */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 var(--pad-x) 64px;
+    min-height: auto;
+    row-gap: 40px;
+  }
+  .hero-collage {
+    grid-template-rows: 260px 160px;
+  }
+  .hero-subtitle {
+    max-width: none;
+  }
+  .btn {
+    display: block;
+    text-align: center;
+  }
+
+  /* ── Instagram: 3 columns ── */
+  .instagram {
+    padding: 60px var(--pad-x);
+  }
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ── Collection header ── */
+  .collection-header {
+    padding: 32px var(--pad-x) 32px;
+  }
+
+  /* ── Gallery: 2 columns ── */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 var(--pad-x) 64px;
+    gap: 8px;
+  }
+
+  /* ── Footer: stack vertically ── */
+  .footer {
+    padding: 32px var(--pad-x);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
