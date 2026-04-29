@@ -61,7 +61,7 @@ img { display: block; max-width: 100%; }
 .nav-byline {
   font-family: var(--font-serif);
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   font-style: italic;
   letter-spacing: 0.07em;
   text-transform: none;
@@ -411,10 +411,7 @@ img { display: block; max-width: 100%; }
   }
   .contact-links {
     flex-direction: column;
-    width: 100%;
-  }
-  .contact-links .btn {
-    text-align: center;
+    align-items: center;
   }
 
   /* ── Footer: stack vertically ── */
