@@ -106,6 +106,12 @@ img { display: block; max-width: 100%; }
   padding: 44px var(--pad-x);
   border-top: 1px solid var(--border);
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-top {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -118,10 +124,58 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
 }
 
+.footer-contact {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-contact a {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.footer-contact a:hover {
+  color: var(--text);
+}
+
 .footer-copy {
   font-size: 0.72rem;
   color: var(--text-muted);
   letter-spacing: 0.08em;
+}
+
+/* ── Contact Section ───────────────────────────────────────── */
+.contact {
+  padding: 96px var(--pad-x);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: -0.015em;
+}
+
+.contact-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 480px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
 }
 
 /* ============================================================
@@ -351,11 +405,30 @@ img { display: block; max-width: 100%; }
     gap: 8px;
   }
 
+  /* ── Contact ── */
+  .contact {
+    padding: 64px var(--pad-x);
+  }
+  .contact-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-links .btn {
+    text-align: center;
+  }
+
   /* ── Footer: stack vertically ── */
   .footer {
     padding: 32px var(--pad-x);
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .footer-top {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 16px;
+  }
+  .footer-contact {
+    gap: 20px;
   }
 }
