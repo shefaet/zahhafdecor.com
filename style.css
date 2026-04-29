@@ -39,17 +39,17 @@ img { display: block; max-width: 100%; }
 
 .nav-brand {
   font-family: var(--font-serif);
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
 }
 
 .nav-logo {
-  height: 52px;
+  height: 64px;
   width: auto;
 }
 
@@ -60,14 +60,13 @@ img { display: block; max-width: 100%; }
 
 .nav-byline {
   font-family: var(--font-serif);
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 600;
   font-style: italic;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   text-transform: none;
-  color: var(--text-muted);
+  color: rgba(44, 44, 44, 0.75);
 }
-
 .nav-links {
   display: flex;
   gap: 44px;
@@ -298,14 +297,14 @@ img { display: block; max-width: 100%; }
     gap: 16px;
   }
   .nav-brand {
-    font-size: 1.4rem;
-    gap: 10px;
+    font-size: 1.8rem;
+    gap: 12px;
   }
   .nav-logo {
-    height: 36px;
+    height: 44px;
   }
   .nav-byline {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   .nav-links {
     display: none;
